@@ -1,12 +1,12 @@
 const discord = require("discord.js")
-
-track = require('novelcovid');
-
+const { NovelCovid } = require("novelcovid");
+track = require('novelcovid')
 
 module.exports = {
-    name: `corona`,
-    description: "Corona stats.",
-    execute: async function(message, args) {
+    name: 'corona',
+    description: "Get stats for covid-19",
+    async execute(message, args, ) {
+
 
 
 
@@ -53,5 +53,5 @@ module.exports = {
     }
     
     
-  
-}}
+  }
+}

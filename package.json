@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "anti-swear-words-packages-discord": "^1.1.23",
     "discord.js": "^12.5.0",
     "ms": "^2.1.2",
     "novelcovid": "^3.0.0",

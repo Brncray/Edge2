@@ -3,7 +3,7 @@ const randomPuppy = require('random-puppy');
 
 module.exports = {
     name: `meme`,
-    description: "Get a meme!",
+    description: "Get a ",
     execute(message, args) {
 
 

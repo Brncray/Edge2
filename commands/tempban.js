@@ -35,7 +35,7 @@ if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("Y
         setTimeout(function () {
             
             
-            message.guild.unban(user.id);
+            message.guild.members.unban(user.id);
 
             message.channel.send(`${user} is now unbanned!`);
 

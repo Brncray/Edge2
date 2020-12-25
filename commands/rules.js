@@ -21,7 +21,8 @@ module.exports = {
             {name: `Rule 8`, value: `No account selling or cracking`},
             {name: `Rule 9`, value: `No dark humour`},
             {name: `Rule 10`, value: `Swearing is *\*NOT*\* permitted`},
-            {name: `Rule 11`, value: `Nothing NSFW`}
+            {name: `Rule 11`, value: `Nothing NSFW`},
+            {name: `Rule 12`, value: `If you are staff. Do not abuse you're power!`}
 
         )
         .setFooter('Made by Brncray#2527');

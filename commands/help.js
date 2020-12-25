@@ -15,7 +15,6 @@ module.exports = {
             {name: `Command 4`, value: `rules`},
             {name: `Command 5`, value: `developer`},
             {name: `Command 6`, value: `clear`},
-            {name: `Command 7`, value: `youtube`},
             {name: `Command 8`, value: `meme`},
             {name: `Command 9`, value: `unmute`},
             {name: `Command 10`, value: `corona`},

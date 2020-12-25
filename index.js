@@ -1,8 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
-const antiSwearWords = require("anti-swear-words-packages-discord")
- 
+
+
+
+
+
 let prefix = config.prefix;
  
 const fs = require('fs');
@@ -22,26 +25,35 @@ client.once('ready', () => {
 });
  
 client.on('ready', () => {
-  client.user.setStatus('dnd')
-  client.user.setPresence({
-      activity: {
-          name: '-help',
-          type: "STREAMING",
-          url: "https://www.twitch.tv/tapebot"
-      }
-  });
-});
-
-
-client.on('message', async message => {
-  antiSwearWords(client, message, {
-  customWord: ["youre anti swear words here", "youre other swear words. Keep adding commas and quotations."],
-  warnMSG: `<@${message.author.id}> , do \**NOT**\ swear.`, // warn message option || when not then = `<@${message.author.id}> dont use swear words.`
-  ignoreWord: ["ignoreThis", "andignoreThis", "alsoIgnoreThis"]
-});
-
-
+  console.log('This bot is online!')
+  client.user.setActivity('Lumina Servers', {
+      type: 'WATCHING'
+  }).catch;
 })
+
+
+
+
+
+
+
+
+//client.on('message', (message) => { 
+  //if(message.channel.id == "783050074270859298" || "783320249458098186") return
+  //if (message.content.includes('discord.gg/'||'discordapp.com/invite/')) { 
+    //message.delete() 
+      //.then(message.channel.send('Link Deleted:\n**Invite links are not permitted on this server**'))
+  //}
+//})
+
+
+//client.on('message', (message) => { 
+  //if(message.channel.id == "783050074270859298") return
+  //if (message.content.includes('https://www.youtube.com'||'https://www.youtube.com/watch')) { 
+    //message.delete() 
+      //.then(message.channel.send('Link Deleted:\n**Invite links are not permitted on this channel**'))
+  //}
+//})
 
 
 
@@ -58,14 +70,10 @@ client.on('message', message =>{
       client.commands.get(`test`).execute(message, args);
     } else if(command === `rules`){
       client.commands.get(`rules`).execute(message, args);
-    } else if(command === `clear`){
-      client.commands.get(`clear`).execute(message, args);
     } else if(command === `kick`){
       client.commands.get(`kick`).execute(message, args);
     } else if(command === `ban`){
       client.commands.get(`ban`).execute(message, args);
-    } else if(command === `youtube`){
-      client.commands.get(`youtube`).execute(message, args)
     } else if(command === `developer`){
       client.commands.get(`developer`).execute(message, args)
     } else if(command === `help`){
@@ -88,9 +96,19 @@ client.on('message', message =>{
       client.commands.get(`mem`).execute(message, args)
     } else if(command === `tempban`){
       client.commands.get(`tempban`).execute(message, args)
+    } else if(command === `faq`){
+      client.commands.get(`faq`).execute(message, args)
+    } else if(command === `clear`){
+      client.commands.get(`clear`).execute(message, args)
+    } else if(command === `faq2`){
+      client.commands.get(`faq2`).execute(message, args)
+    } else if(command === `warn`){
+      client.commands.get(`warn`).execute(message, args)
+    } else if(command === `invite`){
+      client.commands.get(`invite`).execute(message, args)
     }
 });
  
-client.login('NzY3NjY1OTA1NTA0MDkyMTYw.X41Olg.b11u0qhcTlfgta7w8IX0QcJbWt0');
+client.login('NzgzMDU0NjA0Njc3MTUyNzk4.X8VKbg.x8CefFcPtzbT93rKH1gTAAo6RWE');
  
 
